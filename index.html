@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+        body{
+            background-color: #000;
+            color:#fff;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            font-family: "Source Sans Pro", Helvetica, sans-serif;
+        }
+        main{
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            position: relative;
+            /* border: 2px solid red; */
+
+        }
+        #eyes,.eye{
+            position: absolute;
+            
+            /* border: 2px solid red; */
+            background-color: #fff;
+        }
+        h2{
+            font-weight: 100;
+            padding: 10px;
+            font-size: 14px;
+            /* border: 2px solid red; */
+            margin: 0;
+            position: absolute;
+            z-index: 10;      
+            top: 0;
+            color: rgb(251, 168, 168);
+            
+
+        }
+        .mobile{
+            display: none;
+        }
+
+        .eye:nth-child(1){
+            top: 30px;
+            left: -67px;
+        }
+        .eye:nth-child(2){
+            top: 30px;
+            left:3px;
+        } 
+        .eye:nth-child(3){
+            top: 34px;
+            left:83px;
+        }
+        @media screen and (max-width:496px) {
+
+        .eye:nth-child(1){
+            top: 30px;
+            left: -27px;
+        }
+        .eye:nth-child(2){
+            top: 30px;
+            left:45px;
+        } 
+        .eye:nth-child(3){
+            top: 34px;
+            left:120px;
+        }
+        .mobile{
+            display: initial;
+        }
+        .desktop{
+            display: none;
+        }
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <!-- <h2>for mobile users, tap anywhere and see the magic</h2> -->
+
+    <main>
+
+        <img src="./images (7).jpeg" id="anchor" alt="">
+        <div id="eyes">
+            <img src="./eye 1.png" alt="" class="eye" >
+            <!-- <img src="./eye 1.png" alt="" class="eye"> -->
+            <img src="./eye 1.png" alt="" class="eye">
+            <img src="./eye 1.png" alt="" class="eye">
+
+
+        </div>
+    <h2 class="mobile">tap anywhere and see the magic</h2>
+    <h2 class="desktop">hover your mouse</h2>
+
+    </main>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
